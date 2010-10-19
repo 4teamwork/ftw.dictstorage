@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="ftw.dictstorage">
+
+    <adapter
+        factory=".base.DictStorage"
+        provides=".interfaces.IDictStorage"
+        for="*"
+        />
+
+    <configure zcml:condition="installed z3c.saconfig"> 
+
+        <adapter
+            factory=".saconfig.SAConfigDictStorage"
+            provides=".interfaces.IDictStorage"
+            for=".interfaces.IDictStorageSAConfig
+                 .interfaces.IDictStorageConfig"
+            />
+
+    </configure>
+
+</configure>
+

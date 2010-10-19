@@ -1,0 +1,10 @@
+setuptools
+zope.interface
+zope.component
+
+[tests]
+unittest2
+plone.testing
+
+[saconfig]
+z3c.saconfig
