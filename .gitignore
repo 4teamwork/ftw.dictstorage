@@ -1,3 +1,5 @@
 *.swp
 *.pyc
 *.pyo
+
+/src/ftw.dictstorage.egg-info/

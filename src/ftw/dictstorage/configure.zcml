@@ -16,7 +16,7 @@
         </class>
 
         <adapter
-            factory=".sqlalchemy.DictStorage"
+            factory=".sql.DictStorage"
             provides=".interfaces.IDictStorage"
             for=".interfaces.ISQLAlchemy
                  .interfaces.IConfig"

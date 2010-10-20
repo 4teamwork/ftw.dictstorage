@@ -23,8 +23,7 @@ class DictStorage(object):
                 self._storage = dict()
         return self._storage
 
-    def __getitem__(self, key, default):
-        return self.storage[key]
+    def __getitem__(self, key, default=None):
         try:
             return self.storage[key]
         except KeyError:
