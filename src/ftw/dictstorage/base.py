@@ -3,12 +3,10 @@ from zope.component import queryAdapter
 from zope.component import getMultiAdapter
 
 from ftw.dictstorage.interfaces import IDictStorage
-from ftw.dictstorage.interfaces import IDictStorageConfig
+from ftw.dictstorage.interfaces import IConfig
 
 
 class DictStorage(object):
-    """
-    """
 
     def __init__(self, context):
         self.context = context
@@ -17,7 +15,7 @@ class DictStorage(object):
     @property
     def storage(self):
         if self._storage is None:
-            config = queryAdapter(self.context, IDictStorageConfig)
+            config = queryAdapter(self.context, IConfig)
             if config is not None:
                 self._storage = getMultiAdapter(
                         (self.context, config), IDictStorage)

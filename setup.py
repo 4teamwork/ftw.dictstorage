@@ -26,8 +26,8 @@ setup(
         'zope.component'
       ],
       extras_require=dict(
-        saconfig= [
-            'z3c.saconfig',
+        sqlalchemy = [
+            'SQLAlchemy',
         ],
         tests = [
             'unittest2',

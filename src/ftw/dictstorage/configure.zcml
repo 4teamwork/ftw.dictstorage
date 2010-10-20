@@ -9,15 +9,19 @@
         for="*"
         />
 
-    <configure zcml:condition="installed z3c.saconfig"> 
+    <configure zcml:condition="installed sqlalchemy"> 
+
+        <class class="sqlalchemy.orm.scoping.ScopedSession">
+            <implements interface=".interfaces.IConfig" />
+        </class>
 
         <adapter
-            factory=".saconfig.SAConfigDictStorage"
+            factory=".sqlalchemy.DictStorage"
             provides=".interfaces.IDictStorage"
-            for=".interfaces.IDictStorageSAConfig *"
+            for=".interfaces.ISQLAlchemy
+                 .interfaces.IConfig"
             />
 
     </configure>
 
 </configure>
-

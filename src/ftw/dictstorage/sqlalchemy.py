@@ -1,19 +1,15 @@
 
 try:
-    from z3c.saconfig import named_scoped_session
+    from sqlalchemy import Column
+    from sqlalchemy import String
+    from sqlalchemy import Text
+    from sqlalchemy.ext.declarative import declarative_base
 except:
     raise Exception("`ftw.dictstorage` should be installed with "
-                    "`saconfig` extras")
-
-
-from sqlalchemy import Column
-from sqlalchemy import String
-from sqlalchemy import Text
-from sqlalchemy.ext.declarative import declarative_base
+                    "`sqlalchemy` extra")
 
 
 Base = declarative_base()
-
 class DictStorageModel(Base):
 
     __tablename__ = 'dictstorage'
@@ -29,12 +25,11 @@ class DictStorageModel(Base):
         return "<DictStorageModel for key '%s'>" % self.key
 
 
-class SAConfigDictStorage(object):
+class DictStorage(object):
 
-    def __init__(self, context, session_name):
+    def __init__(self, context, session):
         self.context = context
-        self.session = named_scoped_session(session_name)
-        import ipdb; ipdb.set_trace()
+        self.session = session
 
     def __getitem__(self, key):
         item = self.session.query(DictStorageModel) \
