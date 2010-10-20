@@ -23,7 +23,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'zope.interface',
         'zope.component'
       ],
       extras_require=dict(

@@ -1,12 +1,5 @@
 
 
-@adapter(ISAConfig)
-@implementer(IConfig)
-def OpenGeverSessionName(object):
-    return 'opengever'
-
-
-
     >>> from ftw.dictstorage.interfaces import IDictStorage
 
     >>> context = layer['example_context']

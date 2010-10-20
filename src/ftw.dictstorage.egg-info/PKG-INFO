@@ -8,13 +8,6 @@ Author-email: rok@garbas.si
 License: GPL
 Description: 
         
-        @adapter(ISAConfig)
-        @implementer(IConfig)
-        def OpenGeverSessionName(object):
-            return 'opengever'
-        
-        
-        
             >>> from ftw.dictstorage.interfaces import IDictStorage
         
             >>> context = layer['example_context']

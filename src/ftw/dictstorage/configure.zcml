@@ -14,8 +14,7 @@
         <adapter
             factory=".saconfig.SAConfigDictStorage"
             provides=".interfaces.IDictStorage"
-            for=".interfaces.IDictStorageSAConfig
-                 .interfaces.IDictStorageConfig"
+            for=".interfaces.IDictStorageSAConfig *"
             />
 
     </configure>
