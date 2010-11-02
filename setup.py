@@ -3,6 +3,11 @@ from setuptools import setup, find_packages
 
 version = '0.1'
 
+tests_require = [
+            'unittest2',
+            'plone.testing',
+            ]
+
 setup(
     name='ftw.dictstorage',
     version=version,
@@ -11,7 +16,7 @@ setup(
     classifiers=[
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
-    ],
+        ],
     keywords='fwt 4teamwork key value storage sqlalchemy',
     author='Rok Garbas',
     author_email='rok@garbas.si',
@@ -24,18 +29,16 @@ setup(
     install_requires=[
         'setuptools',
         'zope.component'
-      ],
-      extras_require=dict(
+        ],
+    extras_require=dict(
         sqlalchemy = [
             'SQLAlchemy',
-        ],
-        tests = [
-            'unittest2',
-            'plone.testing',
-        ],
-    ),
-      entry_points="""
+            ],
+        tests = tests_require,
+        ),
+    tests_require=tests_require,
+    entry_points="""
       [z3c.autoinclude.plugin]
       target = plone
       """
-      )
+    )
