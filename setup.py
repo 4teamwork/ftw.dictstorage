@@ -12,7 +12,7 @@ setup(
     name='ftw.dictstorage',
     version=version,
     description="Ftw dictstorage package used in OpenGever (Maintainer: %s)" % maintainer,
-    long_description=open("README.txt").read() + "\n" + \
+    long_description=open("README.rst").read() + "\n" + \
               open("docs/HISTORY.txt").read(),
     classifiers=[
         "Programming Language :: Python",
