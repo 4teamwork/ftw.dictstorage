@@ -11,8 +11,9 @@ tests_require = [
 setup(
     name='ftw.dictstorage',
     version=version,
-    description="",
-    long_description=open("README.rst").read(),
+    description="Ftw dictstorage package used in OpenGever (Maintainer: %s)" % maintainer,
+    long_description=open("README.txt").read() + "\n" + \
+              open("docs/HISTORY.txt").read(),
     classifiers=[
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
