@@ -20,6 +20,7 @@ setup(
     keywords='fwt 4teamwork key value storage sqlalchemy',
     author='%s, 4teamwork GmbH' % maintainer,
     author_email='rok@garbas.si',
+      maintainer=maintainer,
     url='gitolite@git.4teamwork.ch:ftw/ftw.dictstorage.git',
     license='GPL',
     packages = find_packages('src', exclude=['ez_setup']),
