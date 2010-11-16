@@ -30,7 +30,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'zope.component'
         ],
     extras_require=dict(
         sqlalchemy = [
