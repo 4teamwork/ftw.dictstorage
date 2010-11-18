@@ -22,7 +22,7 @@ setup(
     author='%s, 4teamwork GmbH' % maintainer,
     author_email='rok@garbas.si',
       maintainer=maintainer,
-    url='gitolite@git.4teamwork.ch:ftw/ftw.dictstorage.git',
+    url='http://psc.4teamwork.ch/dist/ftw-dictstorage/',
     license='GPL',
     packages = find_packages('src', exclude=['ez_setup']),
     package_dir = {'':'src'},
