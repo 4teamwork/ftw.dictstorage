@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = open('src/ftw/dictstorage/version.txt').read().strip()
+version = open('ftw/dictstorage/version.txt').read().strip()
 maintainer = 'Rok Garbas'
 
 tests_require = [
@@ -24,8 +24,8 @@ setup(
       maintainer=maintainer,
     url='http://psc.4teamwork.ch/dist/ftw-dictstorage/',
     license='GPL',
-    packages = find_packages('src', exclude=['ez_setup']),
-    package_dir = {'':'src'},
+    packages = find_packages(exclude=['ez_setup']),
+    include_package_data=True,
     namespace_packages=['ftw'],
     zip_safe=False,
     install_requires=[
