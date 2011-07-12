@@ -5,6 +5,9 @@ Changelog
 1.0a4
 -----
 
+* Fixed signature of some class methods
+  [lgraf]
+
 
 1.0a3
 -----
