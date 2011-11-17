@@ -2,16 +2,16 @@ Changelog
 =========
 
 
-1.0a5
------
+1.0a5 (unreleased)
+------------------
 
-* added test-buildout for plone 4.1
+- added test-buildout for plone 4.1
   [eschmutz]
 
-1.0a4
------
+1.0a4 (2011-07-12)
+------------------
 
-* Fixed signature of some class methods
+- Fixed signature of some class methods
   [lgraf]
 
 
