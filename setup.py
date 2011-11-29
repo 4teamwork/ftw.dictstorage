@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = open('ftw/dictstorage/version.txt').read().strip()
+version = '1.1dev'
 maintainer = 'Rok Garbas'
 
 tests_require = [
