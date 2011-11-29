@@ -21,7 +21,7 @@ setup(
         ],
 
     keywords='ftw key value storage sqlalchemy dictstorage',
-    author='4teamwork GmbH' % maintainer,
+    author='4teamwork GmbH',
     author_email='mailto:info@4teamwork.ch',
     maintainer=maintainer,
     url='https://github.com/4teamwork/ftw.dictstorage/',
