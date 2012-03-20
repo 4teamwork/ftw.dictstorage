@@ -5,7 +5,9 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Remove "self" from IDictStorage interface definitions.
+  This makes it possible to validate a implementation with verifyClass.
+  [jone]
 
 
 1.0 (2011-11-17)

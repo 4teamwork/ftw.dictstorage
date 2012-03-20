@@ -8,15 +8,15 @@ class IDictStorage(Interface):
         TODO: maybe __iter__, values, keys, etc ... should also be implemented
     """
 
-    def __getitem__(self, key):
+    def __getitem__(key):
         """
         """
 
-    def __setitem__(self, key, value):
+    def __setitem__(key, value):
         """
         """
 
-    def __delitem__(self, key):
+    def __delitem__(key):
         """
         """
 
@@ -29,4 +29,3 @@ class IConfig(Interface):
 class ISQLAlchemy(Interface):
     """ marker for sqlalchemy storage
     """
-
