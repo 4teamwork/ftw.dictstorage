@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1 (unreleased)
+1.1 (2012-03-28)
 ----------------
 
 - Remove "self" from IDictStorage interface definitions.
