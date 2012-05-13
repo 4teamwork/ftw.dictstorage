@@ -34,6 +34,9 @@ setup(
 
     install_requires=[
         'setuptools',
+        'zope.component',
+        'zope.configuration',
+        'zope.security',
         ],
 
     extras_require=dict(
