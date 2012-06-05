@@ -5,7 +5,11 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Declare zope dependencies.
+  [jone]
+
+- Update README.
+  [jone]
 
 
 1.1 (2012-03-28)
