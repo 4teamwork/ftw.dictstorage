@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.2.dev'
+version = '1.2'
 maintainer = 'Rok Garbas'
 
 tests_require = [
