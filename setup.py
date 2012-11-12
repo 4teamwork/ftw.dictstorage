@@ -24,7 +24,7 @@ setup(
     author='4teamwork GmbH',
     author_email='mailto:info@4teamwork.ch',
     maintainer=maintainer,
-    url='https://github.com/4teamwork/ftw.dictstorage/',
+    url='https://github.com/4teamwork/ftw.dictstorage',
     license='GPL2',
 
     packages = find_packages(exclude=['ez_setup']),
