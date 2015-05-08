@@ -99,9 +99,9 @@ Runs with `Plone <http://www.plone.org/>`_ `4.0`, `4.1`, `4.2`, `4.3`.
 Links
 =====
 
-- Main github project repository: https://github.com/4teamwork/ftw.dictstorage
-- Issue tracker: https://github.com/4teamwork/ftw.dictstorage/issues
-- Package on pypi: http://pypi.python.org/pypi/ftw.dictstorage
+- Github: https://github.com/4teamwork/ftw.dictstorage
+- Issues: https://github.com/4teamwork/ftw.dictstorage/issues
+- Pypi: http://pypi.python.org/pypi/ftw.dictstorage
 - Continuous integration: https://jenkins.4teamwork.ch/search?q=ftw.dictstorage
 
 
