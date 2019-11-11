@@ -1,8 +1,8 @@
 Introduction
 ============
 
-This package provides a layer for storing key / value paires. The storage
-can be configured dinamically by providing a ``IConfig`` adapter of the
+This package provides a layer for storing key/value pairs. The storage
+can be configured dynamically by providing a ``IConfig`` adapter of the
 context on which the dict storage is used.
 
 
@@ -11,7 +11,7 @@ Examples
 
 The adapter defaults to using a non-persistent dict:
 
-::
+.. code-block:: python
 
     >>> from ftw.dictstorage.interfaces import IDictStorage
 
@@ -34,7 +34,7 @@ The adapter defaults to using a non-persistent dict:
 For configuring a custom storage, implement your own ``IConfig`` which uses
 custom ``IDictStorage``:
 
-::
+.. code-block:: python
 
     >>> from ftw.dictstorage.interfaces import IConfig
     >>> from ftw.dictstorage.base import DictStorage
@@ -84,10 +84,6 @@ custom ``IDictStorage``:
 
     >>> print IDictStorage(context)['foo']
     bar
-
-
-If you use sqlalchemy,
-
 
 
 Compatibility
