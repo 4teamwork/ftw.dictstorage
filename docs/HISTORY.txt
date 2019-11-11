@@ -6,6 +6,7 @@ Changelog
 ----------------
 
 - Drop support for Plone 4.0 and 4.1. [jone]
+- Add support for Plone 5.1 [Nachtalb]
 
 
 1.2 (2012-06-05)
